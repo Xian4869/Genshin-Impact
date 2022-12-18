@@ -380,3 +380,7 @@ table tr th div{
 	position: absolute;
 	clip-path: polygon(0px 0px,0px 0px,100px 0px,100px 100px);
 }
+#照片{
+	height: 120px;
+	width: 120px;
+}
