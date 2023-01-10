@@ -291,6 +291,9 @@ thead{
 	display: block;
 	width: 50%;
 }
+tbody{
+	display: block;
+}
 @media screen and (max-width: 900px){
 thead{
 	float: left;
@@ -299,9 +302,6 @@ thead{
 }
 }
 
-tbody{
-	display: block;
-}
 
 table tr th img{
 	width: 100px;
