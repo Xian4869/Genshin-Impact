@@ -7,7 +7,7 @@ body{
 }
 .content{
 	background-color: #333333;
-	width: 600px;
+	width: 100%;
 	padding: 80px;
 	position: absolute;
 	top: 50%;
