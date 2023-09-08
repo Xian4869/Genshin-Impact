@@ -283,16 +283,19 @@ a{
 }
 
 table{
+	table-layout: fixed;
 	font-size: 20px;
 	width: 100%;
 }
 thead{
 	float: left;
-	display: block;
+	display: table;
 	width: 50%;
 }
 tbody{
-	display: block;
+	display: table;
+	float: right;
+	width: 50%;
 	
 }
 @media screen and (max-width: 900px){
