@@ -303,6 +303,9 @@ thead{
 	display: block;
 	width:100%
 }
+tbody{
+	width: 100%;
+}
 }
 
 
