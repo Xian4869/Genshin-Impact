@@ -385,25 +385,19 @@ table tr th div{
 	position: absolute;
 	clip: rect(0px 50px 50px 0px);
 }
-#攻击2{
-	position: absolute;
-	clip: rect(0px 100px 50px 50px);
-}
-#攻击3{
-	position: absolute;
-	clip: rect(50px 50px 75px 0px);
-}
 
-#角度1{
-	position: absolute;
-	clip-path: polygon(0px 100px,100px 0px,0px 0px,0px 0px);
-	
-}
-#角度2{
-	position: absolute;
-	clip-path: polygon(0px 0px,0px 0px,100px 0px,100px 100px);
-}
 #照片{
 	height: 120px;
 	width: 120px;
 }
+
+
+    .text {
+		position: absolute;
+		top: 75%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		color: black;
+		padding: 5px;
+		font-size: 25px; /* 字体大小，可以根据需要调整 */
+    }
