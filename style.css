@@ -283,11 +283,11 @@ a{
 }
     .text {
 		position: absolute;
-		top: 75%;
+		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%);
 		color: black;
-		padding: 5px;
+		padding: auto;
 		font-size: 25px; /* 字体大小，可以根据需要调整 */
     }
 
@@ -302,23 +302,30 @@ tbody{
 	display: table;
 	width: 50%;
 }
-table div{
+table tr th div{
 	position: relative;
-	width: 100px;
-	height:100px;
 	display: inline-block;
 	margin: 0px;
 	padding: 0px;
-	text-align: center;
-  border-radius: 20px;
 }
 table tr th img{
+	position: relative;
+	top: 5px;
 	width: 100px;
 	height:100px;
 	border-radius: 20px;
 }
 p3{
 	color: red;
+}
+#攻击1{
+	position: absolute;
+	clip: rect(0px 50px 50px 0px);
+}
+
+#武器1{
+	position: absolute;
+	clip-path: polygon(0% 100%,100% 100%,0% 0%,0% 0%);
 }
 
 #SS{background-color: red;}
@@ -342,29 +349,6 @@ p2{
 	color:red
 }
 
-@media screen and (max-width: 900px){
-table{
-	table-layout: fixed;
-	font-size: 16px;
-	width: 100%;
-}
-	thead{
-	float: left;
-	width:100%
-}
-tbody{
-	width: 100%;
-}
-th p{
-	font-size: 20px;
-}
-th p2{
-	font-size: 20px;
-	color:red
-}
-}
-
-
 
 #背景{
 	position: absolute;
@@ -374,7 +358,7 @@ th p2{
 }
 
 #人物{
-	position: absolute;
+	padding: auto;
 	top: 0px;
 	left: 0px;
 	z-index: 2;
@@ -388,18 +372,68 @@ th p2{
 	height: 24px;
 	z-index: 3;
 }
-
-#武器1{
-	position: absolute;
-	clip-path: polygon(0% 100%,100% 100%,0% 0%,0% 0%);
-}
-
 #圣遗物{
 	position: relative;
 	top: -40px;
 	font-size: 30px;
 }
-#攻击1{
-	position: absolute;
-	clip: rect(0px 50px 50px 0px);
+
+/* 手机端 */
+
+@media screen and (max-width: 900px){
+    .text {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		color: black;
+		padding: auto;
+		font-size: 16px; /* 字体大小，可以根据需要调整 */
+    }
+table{
+	table-layout: fixed;
+	font-size: 16px;
+	width: 100%;
 }
+thead{
+	float: left;
+	width:100%
+}
+tbody{
+	width: 100%;
+}
+table tr th div img{
+	width: 75px;
+	height:75px;
+}
+th p{
+	font-size: 20px;
+}
+th p2{
+	font-size: 20px;
+	color:red
+}
+
+table tr th img{
+	position: relative;
+	top: 5px;
+	width: 80px;
+	height:80px;
+}
+#圣遗物{
+	position: relative;
+	top: -25px;
+	font-size: 16px;
+}
+#元素{
+	position: absolute;
+	top: 5px;
+	left: 3px;
+	width: 16px;
+	height: 16px;
+	z-index: 3;
+}
+}
+
+
+
