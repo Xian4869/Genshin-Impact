@@ -326,6 +326,7 @@ p3{
 #武器1{
 	position: absolute;
 	clip-path: polygon(0% 100%,100% 100%,0% 0%,0% 0%);
+	z-index: 2;
 }
 
 #SS{background-color: red;}
