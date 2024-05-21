@@ -272,6 +272,10 @@
       <tr><th colspan="4" style="color: white; background-color: black;">枫丹</th></tr>
       <tr><th colspan="4">苍白的遗荣<br><img src="材料/天赋/「秩序」的哲学.png"><br>秩序</th></tr>
       <tr><th colspan="4"><!-- 秩序 -->
+            <div><!-- 阿蕾奇诺 -->
+               <img id="背景" src="角色/金色.png">
+               <img id="人物" src="角色/阿蕾奇诺.png">
+               <img id="元素" src="元素/火.png"></div>
             <div><!-- 莱欧斯利 -->
                <img id="背景" src="角色/金色.png">
                <img id="人物" src="角色/莱欧斯利.png">
@@ -299,24 +303,16 @@
    </tbody>
 </table>
 <script src="./translate.js"></script>
-<script src="https://res.zvo.cn/msg/msg.js"></script><center>
-<div id="translate" style="color: black;">
-   语言 language:
-</div>
+<script src="https://res.zvo.cn/msg/msg.js"></script>
+<center>
+<div id="translate" style="color: black;">语言 language: </div>
 <script>
-//translate.ignore.tag.push('img'); //翻译时追加上自己想指定忽略的tag标签，凡是在这里面的，都不进行翻译。
-//translate.ignore.class.push('test');	//翻译时指定忽略的class name，凡是class name 在这里面的，都不进行翻译。如果不设置默认只有 ignore 这一个
-//var documents = [];
-//documents.push(document.getElementById('ajax'));
-//documents.push(document.getElementById('test2'));
-//documents.push(document.getElementById('test3'));
-//translate.setDocuments(documents); //指定要翻译的元素的集合,可传入一个或多个元素。如果不设置，默认翻译整个网页
-//translate.setAutoDiscriminateLocalLanguage();	//设置用户第一次用时，自动识别其所在国家的语种进行切换
-translate.setUseVersion2(); //设置使用v2.x 版本
-translate.language.setLocal('chinese_simplified'); //设置本地语种（当前网页的语种）。如果不设置，默认就是 'chinese_simplified' 简体中文。 可填写如 'english'、'chinese_simplified' 等，具体参见文档下方关于此的说明
-translate.listener.start();	//开启html页面变化的监控，对变化部分会进行自动翻译。注意，这里变化区域，是指使用 translate.setDocuments(...) 设置的区域。如果未设置，那么为监控整个网页的变化
-translate.execute(); //执行翻译初始化操作，显示出select语言选择
-</script></center>
+translate.setUseVersion2();
+translate.language.setLocal('chinese_simplified');
+translate.listener.start();
+translate.execute();
+</script>
+</center>
 <script src="script.js"></script>
 </body>
 </html>
