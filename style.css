@@ -352,25 +352,28 @@ p2{
 
 
 #背景{
+	display: block;
 	position: absolute;
-	top: 0px;
-	left: 0px;
+	padding: auto;
 	z-index: 1;
 }
 
 #人物{
-	padding: auto;
-	top: 0px;
-	left: 0px;
+	display: flex;
+	overflow: hidden;
+	align-items: center;
+	justify-content: center;
+	position: relative;
 	z-index: 2;
 }
 
 #元素{
 	position: absolute;
-	top: 3px;
+	top: 10px;
 	left: 3px;
 	width: 24px;
 	height: 24px;
+	line-height: 0;
 	z-index: 3;
 }
 #圣遗物{
@@ -428,7 +431,7 @@ table tr th img{
 }
 #元素{
 	position: absolute;
-	top: 5px;
+	top: 10px;
 	left: 3px;
 	width: 16px;
 	height: 16px;
